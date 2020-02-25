@@ -10,4 +10,7 @@ renderDom(el,window.root);
 console.log(el);
 console.log(vertualDom);
 
+//DOM DIFF 比价两个虚拟DOM区别 比较两个对象的区别
+
+
 

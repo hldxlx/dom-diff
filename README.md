@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+`将虚拟dom转换为真实dom渲染到页面`
 ## Available Scripts
 
 In the project directory, you can run:
