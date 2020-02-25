@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {createElement,render,renderDom} from './element'
+let vertualDom = createElement('ul',{class:'list'},[
+    createElement('li',{class:'item'},['a']),
+    createElement('li',{class:'item'},['b']),
+    createElement('li',{class:'item'},['c'])
+]);
+//将虚拟dom转化成了真实dom渲染到页面上
+let el = render(vertualDom);
+renderDom(el,window.root);
+console.log(el);
+console.log(vertualDom);
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
